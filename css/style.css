@@ -1,0 +1,665 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700&family=Teko:wght@500&display=swap');
+
+/*RESET*/
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+html{
+	font-size: 100%;
+}
+
+/*FIN RESET*/
+
+/*BODY*/
+
+body{
+	background-color: #b5b2b2;
+}
+
+/*FIN BODY*/
+
+/* CONTENEDOR */
+
+/*NAV*/
+.contenedor #mainNav{
+	padding: 10px;
+	background-color: #fff;
+	border-bottom: 1px solid #313135;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+	
+ 	.contenedor #mainNav .logo img{
+		border-radius: 10px;
+		width: 80px;
+		height: 80px;
+	}
+
+	.contenedor #mainNav .search{
+		margin: 5px;
+	}
+
+		.contenedor #mainNav .search input{
+			border-radius: 15px;
+		}
+
+	.contenedor #mainNav .menu{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+		.contenedor #mainNav .menu ul{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			list-style: none;
+		}
+
+			.contenedor #mainNav .menu ul li{
+				padding: 5px;
+				margin-right: 5px;
+			}
+
+			.contenedor #mainNav .menu ul li:hover{
+				box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+				background-color: #ea0000;
+				border-radius: 10px;
+				}
+
+				#mainNav .menu ul li a{
+					text-decoration: none;
+					color: #313135;
+					font-family: 'Nunito Sans', sans-serif;
+					font-size: 0.85em;
+					font-weight: 300;
+				}
+/*FIN NAV*/
+
+/*HEADER*/
+
+#header{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+#header img{
+	width: 100%;
+	height: auto;
+}
+/*FIN HEADER*/
+
+/*NAV FILTROS*/
+
+#filtros{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+	#filtros form{
+		margin-bottom: 5px;
+	}
+
+	#filtros form label{
+		color: #313135;
+		font-family: 'Nunito Sans', sans-serif;
+		font-size: 0.8em;
+		font-weight: 700;
+	}
+
+		#filtros form select{
+			border-radius: 25px;
+		}
+
+		#filtros form select option{
+			color: #313135;
+			font-family: 'Nunito Sans', sans-serif;
+			font-size: 0.8em;
+		}
+
+#filtros b{
+	color: #313135;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 0.8em;
+	font-weight: 700;
+}
+
+#filtros ul{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+}
+
+	#filtros ul li{
+		color: #313135;
+		font-family: 'Nunito Sans', sans-serif;
+		font-size: 0.8em;
+	}
+/*FIN NAV FILTROS*/
+
+/*MAIN*/
+
+#mainMain{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+/*TITULO DESTACADOS*/
+#mainMain .titdestacados{
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	border-bottom: 1px solid #313135;
+}
+#mainMain .titdestacados h2{
+	color: #313135;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 1.8em;
+	font-weight: 700;
+}
+/*FIN TITULO DESTACADOS*/
+
+/*GALERIA DESTACADOS*/
+
+#mainMain{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+#mainMain .destacados{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	justify-items: space-between;
+	margin: 15px;
+}
+
+	#mainMain .destacados figure{
+		height:20em ;
+		width: 10em;
+		border-radius: 5px;
+		text-align: center;
+		background-color: #fff;
+		margin: 15px;
+	}
+
+	#mainMain .destacados figure:hover{
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	}
+
+		#mainMain .destacados figure img{
+			height: 50%;
+			width: auto;
+		}
+
+		#mainMain .destacados figure figcaption{
+			color: #313135;
+			padding: 10px 0;
+			text-align: center;
+			font-family: 'Nunito Sans', sans-serif;
+			font-size: 0.8em;
+			font-weight: 300;
+		}
+
+		#mainMain .destacados figure .price{
+			color: #313135;
+			font-family: 'Nunito Sans', sans-serif;
+			font-size: 1em;
+			font-weight: 700;
+		}
+
+/*FIN GALERIA DESTACADOS*/
+
+/*BOTON COMPRAR*/
+
+.button{
+	border: none;
+	font-size: 0.8em;
+	text-align: center;
+	background-color: #ea0000;
+	color: #fff;
+	border: 1px solid #313135;
+	border-radius: 8px;
+	padding: 6px 11px;
+	height: auto;
+	margin: 20px;
+}
+
+.button:hover{
+	background-color: #313135;
+	color: #fff;
+	cursor: pointer;
+}
+/* FIN BOTON COMPRAR */
+
+/*DELIVERY*/
+.delivery{
+	background-color: #46535b;
+	padding: 15px;
+	margin: 15px 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: 15px;
+}
+
+.delivery figure{
+	text-align: center;
+}
+
+	.delivery figure img{
+		width: 18%;
+		height: 35%;
+	}
+
+	.delivery figure figcaption{
+		color: #fff;
+		padding: 10px 0;
+		text-align: center;
+		font-family: 'Nunito Sans', sans-serif;
+		font-size: 0.8em;
+		font-weight: 300;
+	}
+
+	.delivery figure h2{
+		color: #fff;
+		text-align: center;
+		font-family: 'Nunito Sans', sans-serif;
+		font-size: 1em;
+		font-weight: 700;
+	}
+/*FIN DELIVERY*/
+
+/*NEWSLETTER*/
+.newsletter{
+	background-color: #ea0000;
+	text-align: center;
+	border-radius: 20px;
+	margin: 10px;
+	padding: 15px;
+}
+
+	.newsletter fieldset{
+		border: none;
+	}
+
+		.newsletter fieldset form label{
+			color: #000000;
+			text-align: center;
+			font-family: 'Nunito Sans', sans-serif;
+			font-size: 0.8em;
+			font-weight: 700;
+		}
+
+		.newsletter fieldset form input{
+			background-color: #f0f0f0;
+			border-radius: 10px;
+			width: auto;
+			height: 20px;
+		}		
+
+		.newsletter fieldset form .mail button{
+			border: none;
+			text-align: center;
+			border-radius: 10px;
+			background-color: #fff;
+			padding: 2px 5px;
+			height: auto;
+			margin: 5px;
+		}
+.place{
+	text-align: center;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 1rem;
+
+}
+/*FIN NEWSLETTER*/
+
+/*FOOTER*/
+#mainPie{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: #fff;
+	padding: 10px 30px;
+	align-items: center;
+}
+
+	#mainPie section h3{
+		color: #000000;
+		text-align: center;
+		font-family: 'Nunito Sans', sans-serif;
+		font-size: 1em;
+		font-weight: 300;
+	}
+
+	#mainPie section .redes a img{
+		width: 15%;
+		height: 15%;
+	}
+
+#mainPie section p{
+	color: #000000;
+	text-align: center;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 0.7em;
+	font-weight: 300;
+}	
+
+/*CERVEZAS-------------------------------*/
+
+/*PATAGONIA*/
+.patagonia h2{
+	color: #313135;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 2.5em;
+	font-weight: 700;
+	margin: 10px 15px;
+}
+/*FIN PATAGONIA*/
+
+/*FIN CERVEZAS----------------------------------*/
+
+/*VINOS-----------------------------------------*/
+
+/*DANTE ROBINO*/
+
+.bannerr{
+	text-align: center;
+}
+
+.bannerr img{
+	width: 40%;
+}
+/*FIN DANTE ROBINO*/
+
+/*HUMBERTO CANALE*/
+
+.canale{
+	text-align: center;
+}
+
+.canale img{
+	width: 100%;
+	border: 1px solid #313135;
+}
+/*FIN HUMBERTO CANALE*/
+
+/* CATENA ZAPATA */
+.catena{
+	text-align: center;
+	padding: 10px;
+}
+
+.catena img{
+	width: 100%;
+}
+/* FIN CATENA ZAPATA */
+
+/*FIN VINOS--------------------------------*/
+
+/*MOBILE FIRST _________________________________*/
+
+/*GRID LAYOUT */
+.contenedor{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"nav"
+	"header"
+	"filtros"
+	"main"
+	"pie";
+}
+
+/*FIN GRID LAYOUT*/
+
+/*AREAS DEL LAYOUT*/
+
+#mainNav{
+	grid-area: nav;
+}
+
+#mainMain{
+	grid-area: main;
+}
+
+#mainPie{
+	grid-area: pie;
+}
+
+#filtros{
+	grid-area: filtros;
+}
+
+#header{
+	grid-area: header;
+}
+
+/*FIN AREAS DEL LAYOUT*/
+
+/*MEDIA QUERIES*/
+
+/*INDEX----------------------------*/
+
+@media (min-width: 480px){
+	#mainNav .menu ul li a{
+		font-size: 1em;
+	}
+
+	#filtros form label{
+		font-size: 1em;
+	}
+
+	#filtros form select option{
+		font-size: 1em;
+	}
+
+	#mainMain .titdestacados h2{
+		font-size: 2.2em;
+	}
+
+	#mainMain .destacados figure{
+		height: 25em;
+		width: 15em;
+	}
+
+	#mainMain .destacados figure figcaption{
+		font-size: 1em;
+	}
+
+	#mainMain .destacados figure .price{
+		font-size: 1.3em;
+	}
+
+	.button{
+		font-size: 1.2em;
+		padding: 8px 13px;
+		margin: 25px;
+	}
+
+	.delivery figure figcaption{
+		font-size: 1em;
+	}
+
+	.delivery figure h2{
+		font-size: 1.3em;
+	}
+
+	.newsletter fieldset form label{
+		font-size: 1em;
+	}
+
+	#mainPie section h3{
+		font-size: 1.2em;
+	}
+
+	#mainPie section p{
+		font-size: 1em;
+	}
+}
+
+@media(min-width: 600px){
+	#mainNav .menu ul li a{
+		font-size: 1.3em;
+	}
+
+	#filtros form label{
+		font-size: 1.3em;
+	}
+
+	#mainMain .titdestacados h2{
+		font-size: 2.5em;
+	}	
+
+	#mainMain .destacados figure{
+		height: 28em;
+		width: 18em;
+	}
+
+	#mainMain .destacados figure figcaption{
+		font-size: 1.3em;
+	}
+
+	#mainMain .destacados figure .price{
+		font-size: 1.5em;
+	}
+
+	.delivery figure figcaption{
+		font-size: 1.2em;
+	}
+
+	.delivery figure h2{
+		font-size: 1.5em;
+	}
+
+	.newsletter fieldset form label{
+		font-size: 1.2em;
+	}
+
+	#mainPie section h3{
+		font-size: 1.4em;
+	}
+}
+
+@media(min-width: 768px){
+	.contenedor{
+		grid-template-columns: 27vw 73vw;
+		grid-template-rows: auto;
+		grid-template-areas: 
+		"nav nav"
+		"header header"
+		"filtros main"
+		"pie pie";
+	}
+
+	.contenedor #mainNav{
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	#filtros{
+		text-align: center;
+		align-items: flex-start;
+		justify-content: left;
+		margin: 25px;
+	}
+
+	#mainNav .menu ul li a{
+		font-size: 1.5em;
+	}
+
+	#filtros form label{
+		font-size: 1.5em;
+	}
+
+	#filtros b{
+		font-size: 1.3em;
+	}
+
+	#filtros ul li{
+		font-size: 1.2em;
+	}
+
+	#mainMain .titdestacados h2{
+		font-size: 2.7em;
+	}	
+
+	#mainPie section h3{
+		font-size: 1.4em;
+	}
+
+}
+
+@media(min-width: 1024px){
+	.contenedor #mainNav{
+		justify-content: space-between;
+		justify-items: space-between;
+		align-items: center;
+		align-content: space-between;
+	}
+
+	.contenedor #mainNav .logo img{
+		width: 100px;
+		height: 100px;
+		margin-left: 25px;
+	}
+
+	.contenedor #mainNav .search input{
+		font-size: 1.2em;
+	}
+
+	#mainMain .destacados{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		justify-items: space-between;
+		align-items: center;
+	}
+
+	.delivery{
+		flex-direction: row;
+		height: auto;
+	}
+
+	.delivery figure{
+		margin: 10px;
+	}
+
+	.delivery figure figcaption{
+		font-size: 1em;
+	}
+
+	.delivery figure h2{
+		font-size: 1em;
+	}
+
+	.newsletter{
+		width: 92%;
+	}
+
+	.newsletter fieldset form input{
+		width: 350px;
+		height: 20px;
+	}		
+}
+
