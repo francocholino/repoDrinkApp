@@ -64,14 +64,14 @@ body{
 		}
 
 			.contenedor #mainNav .menu ul li{
-				padding: 5px;
-				margin-right: 5px;
+				padding: 6px;
+				margin-right: 6px;
 			}
 
 			.contenedor #mainNav .menu ul li:hover{
 				box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 				background-color: #ea0000;
-				border-radius: 10px;
+				border-radius: 8px;
 				}
 
 				#mainNav .menu ul li a{
@@ -90,6 +90,20 @@ body{
 	align-items: center;
 	justify-content: center;
 	width: 100%;
+
+
+	height: 100vh;
+	animation-name: headerAnimation;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	background-size: cover;
+}
+
+@keyframes headerAnimation{
+	15%{background-image: url(../multimedia/img/header1.png);}
+	35%{background-image: url(../multimedia/img/header2.jpg);}
+	50%{background-image: url(../multimedia/img/header3.jpg);}
 }
 
 #header img{
