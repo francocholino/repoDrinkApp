@@ -84,15 +84,9 @@ body{
 /*FIN NAV*/
 
 /*HEADER*/
-
-#header{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-
-
+.header-idx{
 	height: 100vh;
+	width: 100vw;
 	animation-name: headerAnimation;
 	animation-duration: 10s;
 	animation-iteration-count: infinite;
@@ -104,6 +98,13 @@ body{
 	15%{background-image: url(../multimedia/img/header1.png);}
 	35%{background-image: url(../multimedia/img/header2.jpg);}
 	50%{background-image: url(../multimedia/img/header3.jpg);}
+}
+
+#header{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;	
 }
 
 #header img{
