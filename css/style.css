@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700&family=Teko:wght@500&display=swap');
 
+/* FONDO DE COLORES */
+
 body{
 	background-color: #b5b2b2;
 }
@@ -16,8 +18,17 @@ body{
 	background-color: #fff;
 }
 
-.txt-titulos{
+.txt-white{
+	color: #fff;
+}
+
+.txt-grey{
 	color: #313135;
+}
+
+.font{
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 1.2em;
 }
 
 #botonera img{
@@ -26,72 +37,19 @@ body{
 	border-radius: 15px;
 }
 
-.txt-font{
+.price{
 	font-family: 'Nunito Sans', sans-serif;
-	font-size: 1.3em;
+	font-size: 1.2em;
+	font-weight: 700;
 }
 
 h1{
-	color: #313135;
 	font-family: 'Nunito Sans', sans-serif;
-	font-size: 2.2em;
+	font-size: 2em;
+	color: #313135;
 	font-weight: 700;
-	text-align: center;
 }
 
-/*FIGURES*/
-
-figure{
-	height:20em ;
-	width: 4em;
-	border-radius: 5px;
-	text-align: center;
-	background-color: #fff;
-	margin: 10px;
-}
-
-	figure:hover{
-		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-	}
-
-	figure img{
-		height: 50%;
-		width: auto;
-	}
-
-	figure figcaption{
-		color: #313135;
-		padding: 10px 0;
-		text-align: center;
-		font-family: 'Nunito Sans', sans-serif;
-		font-size: 0.8em;
-		font-weight: 300;
-	}
-
-	figure .price{
-		color: #313135;
-		font-family: 'Nunito Sans', sans-serif;
-		font-size: 1em;
-		font-weight: 700;
-	}
-
-/*BOTON COMPRAR*/
-
-.button{
-	border: none;
-	font-size: 0.8em;
-	text-align: center;
-	background-color: #ea0000;
-	color: #fff;
-	border: 1px solid #313135;
-	border-radius: 8px;
-	padding: 6px 11px;
-	height: auto;
-	margin: 20px;
-}
-
-.button:hover{
-	background-color: #313135;
-	color: #fff;
-	cursor: pointer;
+figure:hover{
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }

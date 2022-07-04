@@ -1,240 +1,310 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Bebidas Espirituosas - DrinkApp</title>
-	<link href="../multimedia/img/icon.png" rel="icon">
-	<link rel="stylesheet" href="../css/style.css">
-</head>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body>
-	<div class="contenedor">
-		<nav id="mainNav">
-			<div class="logo">
-				<a href="../index.html">
-					<img src="../multimedia/img/icon.png" alt="logo de pagina">
-				</a>
-			</div>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-			<div class="search">
-				<label for="search">
-					<input type="text" placeholder="Estoy buscando..." class="place">
-				</label>
-			</div>
+    <!-- MI CSS-->
 
-			<div class="menu">
-				<ul>
-					<li><a href="../index.html">Inicio</a></li>
-					<li><a href="../pages/cervezas.html">Cervezas</a></li>
-					<li><a href="../pages/vinos.html">Vinos</a></li>
-					<li><a href="pages/espirituosas.html">Espirituosas</a></li>
-					<li><a href="../pages/salcohol.html">Sin Alcohol</a></li>
-				</ul>
-			</div>
-		</nav>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 
-		<header id="header">
-			<img src="../multimedia/img/fondo-4.jpg" alt="imagen de fondo">
-		</header>
+    <link rel="shortcut icon" href="../multimedia/img/icon.png">
 
-		<nav id="filtros">
-			<form><label for="">Categorias</label>
-				<select name="categorias" id="">
-					<option value="">Cervezas</option>
-					<option value="">Vinos</option>
-					<option value="">Espirituosas</option>
-					<option value="">Sin Alcohol</option>
-				</select>
-			</form>
+    <title>Bebidas Espirituosas - DrinkApp</title>
 
-			<b>Marcas</b>
-			<ul>
-				<li>Corona (1)</li>
-				<li>Andes (3)</li>
-				<li>Patagonia (6)</li>
-				<li>Quilmes (2)</li>
-				<li>Stella Artois (3)</li>
-				<li>Bodega Dante Robina (4)</li>
-				<li>Bodega Humberto Canale (3)</li>
-				<li>Bodega Estancia Mendoza (4)</li>
-			</ul>
-		</nav>
+  </head>
 
+  <body>
 
-	<main id="mainMain">
+  <!-- Inicia Nav -->
 
-		<section class="destacados">
-			<figure>
-				<img src="../multimedia/img/sprits/absolut-apeach.jpg" alt="imagen productos">
-				<figcaption>Vodka Absolut Apeach 750ml</figcaption>
-				<h2 class="price">$2749</h2>
-				<button class="button">Comprar</button>
-			</figure>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container-fluid">
 
-			<figure>
-				<img src="../multimedia/img/sprits/absolut-elyx.jpg" alt="imagen productos">
-				<figcaption>Vodka Absolut Elyx 750ml</figcaption>
-				<h2 class="price">$2949</h2>
-				<button class="button">Comprar</button>
-			</figure>
+      <a class="navbar-brand" id="botonera" href="../index.html">
+        <img src="../multimedia/img/icon.png" alt="logotipo">
+      </a>
 
-			<figure>
-				<img src="../multimedia/img/sprits/absolut-comun.png" alt="imagen productos">
-				<figcaption>Vodka Absolut 750ml</figcaption>
-				<h2 class="price">$2549</h2>
-				<button class="button">Comprar</button>
-			</figure>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-			<figure>
-				<img src="../multimedia/img/sprits/absolut-raspberri.png" alt="imagen productos">
-				<figcaption>Vodka Absolut Raspberri 750ml</figcaption>
-				<h2 class="price">$2749</h2>
-				<button class="button">Comprar</button>
-			</figure>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-			<figure>
-				<img src="../multimedia/img/sprits/absolut-mandrin.jfif" alt="imagen productos">
-				<figcaption>Vodka Absolut Mandrin 750ml</figcaption>
-				<h2 class="price">$2749</h2>
-				<button class="button">Comprar</button>
-			</figure>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-			<figure>
-				<img src="../multimedia/img/sprits/skyy-citrus.png" alt="imagen productos">
-				<figcaption>Vodka Skyy Citrus 750ml</figcaption>
-				<h2 class="price">$999</h2>
-				<button class="button">Comprar</button>
-			</figure>
+          <li class="nav-item">
+            <a class="nav-link active font" aria-current="page" href="../index.html">Inicio</a>
+          </li>
 
-			<figure>
-				<img src="../multimedia/img/sprits/skyy-citrus.png" alt="imagen productos">
-				<figcaption>Vodka Skyy Citrus 750ml</figcaption>
-				<h2 class="price">$999</h2>
-				<button class="button">Comprar</button>
-			</figure>
+          <li class="nav-item">
+            <a class="nav-link font" href="../pages/vinos.html">Vinos</a>
+          </li>
 
+          <li class="nav-item dropdown">
 
-			<figure>
-				<img src="../multimedia/img/sprits/skyy-raspberry.jpeg" alt="imagen productos">
-				<figcaption>Vodka Skyy Raspberry 750ml</figcaption>
-				<h2 class="price">$999</h2>
-				<button class="button">Comprar</button>
-			</figure>
+            <a class="nav-link dropdown-toggle font" href="../pages/cervezas.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Cervezas
+            </a>
 
-			<figure>
-				<img src="../multimedia/img/sprits/smirnoff-citric.jpg" alt="imagen productos">
-				<figcaption>Vodka Smirnoff Citric 750ml</figcaption>
-				<h2 class="price">$1109</h2>
-				<button class="button">Comprar</button>
-			</figure>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item font" href="../pages/cervezas.html">Andes Origen</a></li>
+              <li><a class="dropdown-item font" href="../pages/cervezas.html">Corona</a></li>
+              <li><a class="dropdown-item font" href="../pages/cervezas.html">Patagonia</a></li>
+              <li><a class="dropdown-item font" href="../pages/cervezas.html">Stella Artois</a></li>
+            </ul>
+          </li>
 
-			<figure>
-				<img src="../multimedia/img/sprits/smirnoff-citrus.jpg" alt="imagen productos">
-				<figcaption>Vodka Smirnoff Citrus 750ml</figcaption>
-				<h2 class="price">$1109</h2>
-				<button class="button">Comprar</button>
-			</figure>
+          <li class="nav-item">
+            <a class="nav-link font" href="../pages/espirituosas.html">Espirituosas</a>
+          </li>
 
-			<figure>
-				<img src="../multimedia/img/sprits/smirnoff-comun.jpg" alt="imagen productos">
-				<figcaption>Vodka Smirnoff Comun 750ml</figcaption>
-				<h2 class="price">$1049</h2>
-				<button class="button">Comprar</button>
-			</figure>
+           <li class="nav-item">
+            <a class="nav-link font" href="../pages/salcohol.html">Sin Alcohol</a>
+          </li>
+        </ul>
 
-			<figure>
-				<img src="../multimedia/img/sprits/smirnoff-raspberry.jpeg" alt="imagen productos">
-				<figcaption>Vodka Smirnoff Raspberry 750ml</figcaption>
-				<h2 class="price">$1109</h2>
-				<button class="button">Comprar</button>
-			</figure>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Estoy buscando..." aria-label="Search">
+          <button class="btn bg-red txt-white font" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- end nav-->
 
-			<figure>
-				<img src="../multimedia/img/sprits/gin-beefeater.png" alt="imagen productos">
-				<figcaption>Gin Beeafeater 700ml</figcaption>
-				<h2 class="price">$3109</h2>
-				<button class="button">Comprar</button>
-			</figure>
+  <!-- INICIA CAROUSEL -->
 
-			<figure>
-				<img src="../multimedia/img/sprits/gin-bosque.png" alt="imagen productos">
-				<figcaption>Gin Bosque 500ml</figcaption>
-				<h2 class="price">$2999</h2>
-				<button class="button">Comprar</button>
-			</figure>
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../multimedia/img/fondo-4.jpg" class="d-block w-100" alt="banner">
+      </div>
+    </div>
+  </div>
 
-			<figure>
-				<img src="../multimedia/img/sprits/gin-brighton.jpg" alt="imagen productos">
-				<figcaption>Gin Brighton 700ml</figcaption>
-				<h2 class="price">$1099</h2>
-				<button class="button">Comprar</button>
-			</figure>
+  <!--end carousel-->
 
-			<figure>
-				<img src="../multimedia/img/sprits/gin-gordons.jpeg" alt="imagen productos">
-				<figcaption>Gin Gordons 700ml</figcaption>
-				<h2 class="price">$1499</h2>
-				<button class="button">Comprar</button>
-			</figure>
+  <main>
+    <section class="py-3">
+      <div class="container-fluid">
 
-			<figure>
-				<img src="../multimedia/img/sprits/gin-merle.jpg" alt="imagen productos">
-				<figcaption>Gin Merle 750ml</figcaption>
-				<h2 class="price">$1299</h2>
-				<button class="button">Comprar</button>
-			</figure>
+        <!--VODKA-->
 
-			<figure>
-				<img src="../multimedia/img/sprits/branca.jpg" alt="imagen productos">
-				<figcaption>Fernet Branca 750ml</figcaption>
-				<h2 class="price">$1199</h2>
-				<button class="button">Comprar</button>
-			</figure>
+        <h2 class="text-center">Vodka</h2>
 
-			<figure>
-				<img src="../multimedia/img/sprits/branca-1l.jfif" alt="imagen productos">
-				<figcaption>Fernet Branca 1000ml</figcaption>
-				<h2 class="price">$1499</h2>
-				<button class="button">Comprar</button>
-			</figure>
+        <div class="row">
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/sprits/absolut-apeach.jpg" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Vodka Absolut Apeach 750ml</h3>
+              <p class="card-text text-center price">$2749</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
+          </figure>
 
-			<figure>
-				<img src="../multimedia/img/sprits/red.jpg" alt="imagen productos">
-				<figcaption>Whisky Johhnie Walker Red Label 750ml</figcaption>
-				<h2 class="price">$3499</h2>
-				<button class="button">Comprar</button>
-			</figure>
-		</section>
-	</main>
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/sprits/absolut-elyx.jpg" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Vodka Absolut Elyx 750ml</h3>
+              <p class="card-text text-center price">$2949</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
+          </figure>
 
+           <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/sprits/absolut-comun.png" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Vodka Absolut 750ml</h3>
+              <p class="card-text text-center price">$2549</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
+          </figure>
 
+           <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/sprits/absolut-raspberri.png" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Vodka Absolut Raspberri 750ml</h3>
+              <p class="card-text text-center price">$2749</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
+          </figure>
 
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 mt-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/sprits/absolut-mandrin.jfif" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Vodka Absolut Mandrin 750ml</h3>
+              <p class="card-text text-center price">$2749</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
+          </figure>
 
-	<footer id="mainPie">
-		<section>
-			<h3>Seguinos en nuestras redes</h3>
-			<div class="redes">
-				<a href="https://www.facebook.com/">
-					<img src="../multimedia/iconos/facebook-logo-24.png" >
-				</a>
-				<a href="https://www.instagram.com/">
-					<img src="../multimedia/iconos/instagram-logo-24.png" >
-				</a>
-				<a href="https://www.whatsapp.com/?lang=es">
-					<img src="../multimedia/iconos/whatsapp-logo-24.png">
-				</a>
-			</div>
-		</section>
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 mt-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/sprits/skyy-citrus.png" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Vodka Skyy Citrus 750ml</h3>
+              <p class="card-text text-center price">$999</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
+          </figure>
 
-		<section>
-		 	<p>
-		 		<strong>
-		 		 ® 2022.DrinkApp.Beber con moderación.Prohibida la venta de alcohol a menores de 18 años
-		 		</strong>
-			</p>
-		</section>
-	</footer>
-	</div>
-</body>
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 mt-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/sprits/skyy-raspberry.jpeg" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Vodka Skyy Raspberry 750ml</h3>
+              <p class="card-text text-center price">$999</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
+          </figure>
+
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 mt-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/sprits/smirnoff-citric.jpg" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Vodka Smirnoff Citric 750ml</h3>
+              <p class="card-text text-center price">$999</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
+          </figure>
+
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 mt-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/sprits/smirnoff-citrus.jpg" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Vodka Smirnoff Citrus 750ml</h3>
+              <p class="card-text text-center price">$1109</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
+          </figure>
+
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 mt-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/sprits/smirnoff-comun.jpg" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Vodka Smirnoff Comun 750ml</h3>
+              <p class="card-text text-center price">$1049</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
+          </figure>
+
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 mt-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/sprits/smirnoff-raspberry.jpeg" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Vodka Smirnoff Raspberry 750ml</h3>
+              <p class="card-text text-center price">$1109</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
+          </figure>
+
+           <!--GIN-->
+
+           <h2 class="text-center">Gin</h2>
+
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 mt-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/sprits/gin-beefeater.png" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Gin Beeafeater 700ml</h3>
+              <p class="card-text text-center price">$3109</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
+          </figure>
+
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 mt-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/sprits/gin-bosque.png" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Gin Bosque 500ml</h3>
+              <p class="card-text text-center price">$2999</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
+          </figure>
+
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 mt-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/sprits/gin-brighton.jpg" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Gin Brighton 700ml</h3>
+              <p class="card-text text-center price">$1099</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
+          </figure>
+
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 mt-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/sprits/gin-gordons.jpeg" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Gin Gordons 700ml</h3>
+              <p class="card-text text-center price">$1499</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
+          </figure>
+
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 mt-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/sprits/gin-merle.jpg" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Gin Merle 750ml</h3>
+              <p class="card-text text-center price">$1299</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
+          </figure>
+
+          <!--FERNET-->
+
+          <h2 class="text-center">Fernet</h2>
+
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 mt-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/sprits/branca.jpg" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Fernet Branca 750ml</h3>
+              <p class="card-text text-center price">$1199</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
+          </figure>
+
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 mt-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/sprits/branca-1l.jfif" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Fernet Branca 1000ml</h3>
+              <p class="card-text text-center price">$1499</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
+          </figure>
+
+          <h2 class="text-center">Whisky</h2>
+
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 mt-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/sprits/red.jpg" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Whisky Johhnie Walker Red Label 750ml</h3>
+              <p class="card-text text-center price">$3499</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white py-3 text-center">
+      <h3>Seguinos en nuestras redes</h3>
+        <div class="redes">
+          <a href="https://www.facebook.com/">
+            <img src="../multimedia/iconos/facebook-logo-24.png" >
+          </a>
+          <a href="https://www.instagram.com/">
+            <img src="../multimedia/iconos/instagram-logo-24.png" >
+          </a>
+          <a href="https://www.whatsapp.com/?lang=es">
+            <img src="../multimedia/iconos/whatsapp-logo-24.png">
+          </a>
+        </div>
+      <p>
+        <strong>
+         ® 2022.DrinkApp.Beber con moderación.Prohibida la venta de alcohol a menores de 18 años
+        </strong>
+        </p>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
 </html>

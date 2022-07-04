@@ -8,225 +8,284 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- Mi CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- MI CSS-->
 
-    <title>Cervezas - Todas las marcas</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
     <link rel="shortcut icon" href="../multimedia/img/icon.png">
+
+    <title>Cervezas- Las mejores marcas</title>
+
   </head>
 
   <body>
 
-    <!-- Inicia Nav -->
+  <!-- Inicia Nav -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white" id="botonera">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">
-          <img src="../multimedia/img/icon.png" alt="logotipo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=" #navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active txt-titulos txt-font" aria-current="page" href="../index.html">Inicio</a>
-            </li>
-            <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle txt-titulos txt-font" href="../pages/cervezas.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Cervezas
-           </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-               <li><a class="dropdown-item txt-font" href="../pages/cervezas.html">Andes Origen</a></li>
-                <li><a class="dropdown-item txt-font" href="../pages/cervezas.html">Corona</a></li>
-                <li><a class="dropdown-item txt-font" href="../pages/cervezas.html">Patagonia</a></li>
-                <li><a class="dropdown-item txt-font" href="../pages/cervezas.html">Stella Artois</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item txt-font" href="#">Promociones</a></li>
-          </ul>
-        </li>
-            <li class="nav-item">
-              <a class="nav-link txt-font" href="../pages/vinos.html">Vinos</a>
-            </li>
-             <li class="nav-item">
-              <a class="nav-link txt-font" href="../pages/espirituosas.html">Espirituosas</a>
-            </li>
-             <li class="nav-item">
-              <a class="nav-link txt-font" href="../pages/salcohol.html">Sin Alcohol</a>
-            </li>
-          </ul>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container-fluid">
 
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Estoy buscando..." aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
-          </form>
-        </div>
+      <a class="navbar-brand" id="botonera" href="../index.html">
+        <img src="../multimedia/img/icon.png" alt="logotipo">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link active font" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link font" href="../pages/vinos.html">Vinos</a>
+          </li>
+
+          <li class="nav-item dropdown">
+
+            <a class="nav-link dropdown-toggle font" href="../pages/cervezas.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Cervezas
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item font" href="../pages/cervezas.html">Andes Origen</a></li>
+              <li><a class="dropdown-item font" href="../pages/cervezas.html">Corona</a></li>
+              <li><a class="dropdown-item font" href="../pages/cervezas.html">Patagonia</a></li>
+              <li><a class="dropdown-item font" href="../pages/cervezas.html">Stella Artois</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link font" href="../pages/espirituosas.html">Espirituosas</a>
+          </li>
+
+           <li class="nav-item">
+            <a class="nav-link font" href="../pages/salcohol.html">Sin Alcohol</a>
+          </li>
+        </ul>
+
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Estoy buscando..." aria-label="Search">
+          <button class="btn bg-red txt-white font" type="submit">Buscar</button>
+        </form>
       </div>
-</nav>
-    <!-- Fin Nav -->
+    </div>
+  </nav>
+  <!-- end nav-->
+
+  <!-- INICIA CAROUSEL -->
+
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../multimedia/img/fondo-2.jpg" class="d-block w-100" alt="banner">
+      </div>
+    </div>
+  </div>
+
+  <!--end carousel-->
 
   <main>
     <section class="py-3">
-       <div class="container-fluid">
+      <div class="container-fluid">
 
-         <h1>PATAGONIA</h1>
-         <div class="row">
-          <figure class="col-sm-12 col-md-6 col-lg-3">
-            <img src="../multimedia/img/cervezas/patagonia/b-24.7.jpg" alt="imagen productos">
-            <figcaption>Patagonia IPA 24.7 Botella 710ml</figcaption>
-            <h2 class="price">$349</h2>
-             <button class="button">Comprar</button>
+        <!--PATAGONIA-->
+
+        <h2 class="text-center">Patagonia</h2>
+
+        <div class="row">
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/cervezas/patagonia/b-24.7.jpg" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Patagonia IPA 24.7 Botella 710ml</h3>
+              <p class="card-text text-center price">$349</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
           </figure>
 
-          <figure class="col-sm-12 col-md-6 col-lg-3">
-            <img src="../multimedia/img/cervezas/patagonia/b-amber.jpeg" alt="imagen productos">
-            <figcaption>Patagonia Amber Lager Botella 710ml</figcaption>
-            <h2 class="price">$349</h2>
-            <button class="button">Comprar</button>
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/cervezas/patagonia/b-amber.jpeg" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Patagonia Amber Lager Botella 710ml</h3>
+              <p class="card-text text-center price">$349</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
           </figure>
 
-          <figure class="col-sm-12 col-md-6 col-lg-3">
-            <img src="../multimedia/img/cervezas/patagonia/24.7-lata.png" alt="imagen productos">
-            <figcaption>Patagonia IPA 24.7 Lata 473ml</figcaption>
-            <h2 class="price">$179</h2>
-            <button class="button">Comprar</button>
+           <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/cervezas/patagonia/24.7-lata.png" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Patagonia IPA 24.7 Lata 473ml</h3>
+              <p class="card-text text-center price">$199</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
           </figure>
 
-          <figure class="col-sm-12 col-md-6 col-lg-3">
-            <img src="../multimedia/img/cervezas/patagonia/b-bohemian.png" alt="imagen productos">
-            <figcaption>Patagonia Bohemian Pilsner Botella 710ml</figcaption>
-            <h2 class="price">$349</h2>
-            <button class="button">Comprar</button>
+           <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/cervezas/patagonia/b-bohemian.png" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Patagonia Bohemian Pilsner Botella 710ml</h3>
+              <p class="card-text text-center price">$349</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
           </figure>
 
-          <figure class="col-sm-12 col-md-6 col-lg-3">
-            <img src="../multimedia/img/cervezas/patagonia/b-porter.jpg" alt="imagen productos">
-            <figcaption>Patagonia Porter Botella 710ml</figcaption>
-            <h2 class="price">$349</h2>
-            <button class="button">Comprar</button>
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 mt-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/cervezas/patagonia/b-porter.jpg" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Patagonia Porter Botella 710ml</h3>
+              <p class="card-text text-center price">$349</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
           </figure>
 
-          <figure class="col-sm-12 col-md-6 col-lg-3">
-            <img src="../multimedia/img/cervezas/patagonia/b-weisse.jpg" alt="imagen productos">
-            <figcaption>Patagonia Weisse Botella 710ml</figcaption>
-            <h2 class="price">$349</h2>
-            <button class="button">Comprar</button>
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 mt-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/cervezas/patagonia/b-weisse.jpg" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Patagonia Weisse Botella 710ml</h3>
+              <p class="card-text text-center price">$349</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
           </figure>
 
-          <figure class="col-sm-12 col-md-6 col-lg-3">
-            <img src="../multimedia/img/cervezas/patagonia/l-bohemian.png" alt="imagen productos">
-            <figcaption>Patagonia Bohemian Pilsner Lata 473ml</figcaption>
-            <h2 class="price">$179</h2>
-            <button class="button">Comprar</button>
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 mt-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/cervezas/patagonia/l-bohemian.png" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Patagonia Bohemian Pilsner Lata 473ml</h3>
+              <p class="card-text text-center price">$199</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
           </figure>
 
-          <figure class="col-sm-12 col-md-6 col-lg-3">
-            <img src="../multimedia/img/cervezas/patagonia/l-weisse.jpg" alt="imagen productos">
-            <figcaption>Patagonia Weisse Lata 473ml</figcaption>
-            <h2 class="price">$179</h2>
-            <button class="button">Comprar</button>
-          </figure>
-         </div>
-
-      
-          <h1>Corona</h1>
-        
-
-         <div class="row"> 
-          <figure class="col-sm-12 col-md-6 col-lg-3">
-            <img src="../multimedia/img/cervezas/corona/b-corona.png" alt="imagen productos">
-            <figcaption>Cerveza Corona Botella 710ml</figcaption>
-            <h2 class="price">$363</h2>
-            <button class="button">Comprar</button>
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 mt-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/cervezas/patagonia/l-weisse.jpg" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Patagonia Weisse Lata 473ml</h3>
+              <p class="card-text text-center price">$199</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
           </figure>
 
-          <figure class="col-sm-12 col-md-6 col-lg-3">
-            <img src="../multimedia/img/cervezas/corona/corona-330.png" alt="imagen productos">
-            <figcaption>Cerveza Corona Porron 330ml</figcaption>
-            <h2 class="price">$209</h2>
-            <button class="button">Comprar</button>
+          <!--CORONA-->
+
+          <h2 class="text-center">Corona</h2>
+
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 mt-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/cervezas/corona/b-corona.png" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Cerveza Corona Botella 710ml</h3>
+              <p class="card-text text-center price">$363</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
           </figure>
 
-          <figure class="col-sm-12 col-md-6 col-lg-3">
-            <img src="../multimedia/img/cervezas/corona/l-corona.jpg" alt="imagen productos">
-            <figcaption>Cerveza Corona Lata 269ml</figcaption>
-            <h2 class="price">$179</h2>
-            <button class="button">Comprar</button>
-          </figure>
-         </div>  
-
-            
-            <h1>Andes Origen</h1>
-             
-            
-          <div class="row">
-          <figure class="col-sm-12 col-md-6 col-lg-3">
-            <img src="../multimedia/img/cervezas/andes/l-andes-miel.png" alt="imagen productos">
-            <figcaption>Cerveza Andes Origen Miel Lata 473ml</figcaption>
-            <h2 class="price">$212</h2>
-            <button class="button">Comprar</button>
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 mt-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/cervezas/corona/corona-330.png" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Cerveza Corona Porron 330ml</h3>
+              <p class="card-text text-center price">$209</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
           </figure>
 
-          <figure class="col-sm-12 col-md-6 col-lg-3">
-            <img src="../multimedia/img/cervezas/andes/l-andes-negra.png" alt="imagen productos">
-            <figcaption>Cerveza Andes Origen Negra Lata 473ml</figcaption>
-            <h2 class="price">$212</h2>
-            <button class="button">Comprar</button>
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 mt-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/cervezas/corona/l-corona.jpg" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Cerveza Corona Lata 269ml</h3>
+              <p class="card-text text-center price">$199</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
           </figure>
 
-          <figure class="col-sm-12 col-md-6 col-lg-3">
-            <img src="../multimedia/img/cervezas/andes/l-andes-rubia.png" alt="imagen productos">
-            <figcaption>Cerveza Andes Origen Rubia Lata 473ml</figcaption>
-            <h2 class="price">$212</h2>
-            <button class="button">Comprar</button>
+           <!-- ANDES ORIGEN-->
+
+           <h2 class="text-center">Andes Origen</h2>
+
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 mt-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/cervezas/andes/l-andes-miel.png" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Cerveza Andes Origen Miel Lata 473ml</h3>
+              <p class="card-text text-center price">$249</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
           </figure>
 
-          <figure class="col-sm-12 col-md-6 col-lg-3">
-            <img src="../multimedia/img/cervezas/andes/l-andes-ipa.jpg" alt="imagen productos">
-            <figcaption>Cerveza Andes Origen IPA Lata 473ml</figcaption>
-            <h2 class="price">$212</h2>
-            <button class="button">Comprar</button>
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 mt-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/cervezas/andes/l-andes-negra.png" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Cerveza Andes Origen Negra Lata 473ml</h3>
+              <p class="card-text text-center price">$249</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
           </figure>
 
-          <figure class="col-sm-12 col-md-6 col-lg-3">
-            <img src="../multimedia/img/cervezas/andes/l-andes-roja.jpg" alt="imagen productos">
-            <figcaption>Cerveza Andes Origen Roja Lata 473ml</figcaption>
-            <h2 class="price">$212</h2>
-            <button class="button">Comprar</button>
-          </figure>
-          </div>
-
-            
-            <h1>Stella Artois</h1>
-             
-
-          <div class="row">
-          <figure class="col-sm-12 col-md-6 col-lg-3">
-            <img src="../multimedia/img/cervezas/stella/stella-lata.png" alt="imagen productos">
-            <figcaption>Cerveza Stella Artois Lata 473ml</figcaption>
-            <h2 class="price">$242</h2>
-            <button class="button">Comprar</button>
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 mt-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/cervezas/andes/l-andes-rubia.png" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Cerveza Andes Origen Rubia Lata 473ml</h3>
+              <p class="card-text text-center price">$249</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
           </figure>
 
-          <figure class="col-sm-12 col-md-6 col-lg-3">
-            <img src="../multimedia/img/cervezas/stella/b-stella-artois.jpg" alt="imagen productos">
-            <figcaption>Cerveza Stella Artois Botella 975ml</figcaption>
-            <h2 class="price">$349</h2>
-            <button class="button">Comprar</button>
-          </figure class="col-sm-12 col-md-6 col-lg-3">
-
-          <figure class="col-sm-12 col-md-6 col-lg-3">
-            <img src="../multimedia/img/cervezas/stella/b-stella.jfif" alt="imagen productos">
-            <figcaption>Cerveza Stella Artois Porron 330ml</figcaption>
-            <h2 class="price">$212</h2>
-            <button class="button">Comprar</button>
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 mt-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/cervezas/andes/l-andes-ipa.jpg" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Cerveza Andes Origen IPA Lata 473ml</h3>
+              <p class="card-text text-center price">$249</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
           </figure>
-          </div>
+
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 mt-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/cervezas/andes/l-andes-roja.jpg" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Cerveza Andes Origen Roja Lata 473ml</h3>
+              <p class="card-text text-center price">$249</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
+          </figure>
+
+          <!--STELLA ARTOIS-->
+
+          <h2 class="text-center">Stella Artois</h2>
+
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 mt-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/cervezas/stella/stella-lata.png" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Cerveza Stella Artois Lata 473ml</h3>
+              <p class="card-text text-center price">$269</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
+          </figure>
+
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 mt-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/cervezas/stella/b-stella-artois.jpg" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Cerveza Stella Artois Botella 975ml</h3>
+              <p class="card-text text-center price">$369</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
+          </figure>
+
+          <figure class="card col-sm-12 col-md-6 col-lg-3 mx-4 mt-4 text-center" style="width: 18rem;">
+            <img src="../multimedia/img/cervezas/stella/b-stella.jfif" class="card-img-top w-75 h-auto" alt="producto">
+            <div class="card-body">
+              <h3 class="card-title font text-center">Cerveza Stella Artois Porron 330ml</h3>
+              <p class="card-text text-center price">$229</p>
+              <button class="btn bg-red txt-white font text-center">Comprar</button>
+            </div>
+          </figure>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <footer class="bg-red py-3 text-center">
+  <footer class="bg-white py-3 text-center">
       <h3>Seguinos en nuestras redes</h3>
         <div class="redes">
           <a href="https://www.facebook.com/">
@@ -248,5 +307,6 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
   </body>
 </html>
